@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D1200031505515D00D0A72E /* libRedLaserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1200011505515D00D0A72E /* libRedLaserSDK.a */; };
+		5D12000E1505519C00D0A72E /* OverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1200091505519C00D0A72E /* OverlayController.m */; };
+		5D1200101505519C00D0A72E /* ScanOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D12000C1505519C00D0A72E /* ScanOverlay.xib */; };
+		5D1200131505527000D0A72E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1200121505527000D0A72E /* QuartzCore.framework */; };
+		5D1200151505527C00D0A72E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1200141505527C00D0A72E /* CoreVideo.framework */; };
+		5D1200171505529200D0A72E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1200161505529200D0A72E /* CoreMedia.framework */; };
+		5D1200191505529D00D0A72E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1200181505529D00D0A72E /* AVFoundation.framework */; };
+		5D12001B150552A600D0A72E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12001A150552A600D0A72E /* OpenGLES.framework */; };
+		5D12001D150552AC00D0A72E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12001C150552AC00D0A72E /* Security.framework */; };
+		5D12001F150552BC00D0A72E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12001E150552BC00D0A72E /* libiconv.dylib */; };
+		5D120021150552C900D0A72E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D120020150552C900D0A72E /* libstdc++.dylib */; };
+		5D120023150556A500D0A72E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D120022150556A500D0A72E /* AudioToolbox.framework */; };
+		5D120025150556B000D0A72E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D120024150556B000D0A72E /* SystemConfiguration.framework */; };
+		5D120027150556BB00D0A72E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D120026150556BB00D0A72E /* CFNetwork.framework */; };
+		5D12003C1505611200D0A72E /* RLSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1200331505611100D0A72E /* RLSampleViewController.m */; };
+		5D12003D1505611200D0A72E /* RLSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D1200341505611100D0A72E /* RLSampleViewController.xib */; };
+		5D12003E1505611200D0A72E /* poweredByRedLaser.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1200351505611100D0A72E /* poweredByRedLaser.png */; };
+		5D12003F1505611200D0A72E /* poweredByRedLaser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1200361505611100D0A72E /* poweredByRedLaser@2x.png */; };
+		5D1200401505611200D0A72E /* powered_by_redlaser.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1200371505611100D0A72E /* powered_by_redlaser.png */; };
+		5D1200411505611200D0A72E /* powered_by_redlaser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1200381505611100D0A72E /* powered_by_redlaser@2x.png */; };
+		5D1200421505611200D0A72E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1200391505611100D0A72E /* Icon.png */; };
+		5D1200431505611200D0A72E /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D12003A1505611200D0A72E /* beep.wav */; };
+		5D1200441505611200D0A72E /* bolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D12003B1505611200D0A72E /* bolt.png */; };
+		5D120046150563BB00D0A72E /* RedLaser_License.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5D120045150563BB00D0A72E /* RedLaser_License.xml */; };
+		5D12FFEB15054F4700D0A72E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12FFEA15054F4700D0A72E /* UIKit.framework */; };
+		5D12FFED15054F4700D0A72E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12FFEC15054F4700D0A72E /* Foundation.framework */; };
+		5D12FFEF15054F4700D0A72E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12FFEE15054F4700D0A72E /* CoreGraphics.framework */; };
+		5D12FFF515054F4700D0A72E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D12FFF315054F4700D0A72E /* InfoPlist.strings */; };
+		5D12FFF715054F4700D0A72E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12FFF615054F4700D0A72E /* main.m */; };
+		5D12FFFB15054F4700D0A72E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12FFFA15054F4700D0A72E /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D1200011505515D00D0A72E /* libRedLaserSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRedLaserSDK.a; sourceTree = "<group>"; };
+		5D1200021505515D00D0A72E /* RedLaserSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedLaserSDK.h; sourceTree = "<group>"; };
+		5D1200081505519C00D0A72E /* OverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayController.h; sourceTree = "<group>"; };
+		5D1200091505519C00D0A72E /* OverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayController.m; sourceTree = "<group>"; };
+		5D12000C1505519C00D0A72E /* ScanOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanOverlay.xib; sourceTree = "<group>"; };
+		5D1200121505527000D0A72E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5D1200141505527C00D0A72E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5D1200161505529200D0A72E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5D1200181505529D00D0A72E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5D12001A150552A600D0A72E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5D12001C150552AC00D0A72E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5D12001E150552BC00D0A72E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		5D120020150552C900D0A72E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		5D120022150556A500D0A72E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5D120024150556B000D0A72E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5D120026150556BB00D0A72E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5D1200321505611100D0A72E /* RLSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLSampleViewController.h; sourceTree = "<group>"; };
+		5D1200331505611100D0A72E /* RLSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLSampleViewController.m; sourceTree = "<group>"; };
+		5D1200341505611100D0A72E /* RLSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLSampleViewController.xib; sourceTree = "<group>"; };
+		5D1200351505611100D0A72E /* poweredByRedLaser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredByRedLaser.png; sourceTree = "<group>"; };
+		5D1200361505611100D0A72E /* poweredByRedLaser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredByRedLaser@2x.png"; sourceTree = "<group>"; };
+		5D1200371505611100D0A72E /* powered_by_redlaser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powered_by_redlaser.png; sourceTree = "<group>"; };
+		5D1200381505611100D0A72E /* powered_by_redlaser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powered_by_redlaser@2x.png"; sourceTree = "<group>"; };
+		5D1200391505611100D0A72E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5D12003A1505611200D0A72E /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		5D12003B1505611200D0A72E /* bolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolt.png; sourceTree = "<group>"; };
+		5D120045150563BB00D0A72E /* RedLaser_License.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RedLaser_License.xml; sourceTree = "<group>"; };
+		5D12FFE615054F4700D0A72E /* BloodbankiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodbankiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D12FFEA15054F4700D0A72E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D12FFEC15054F4700D0A72E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D12FFEE15054F4700D0A72E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D12FFF215054F4700D0A72E /* BloodbankiPhoneApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodbankiPhoneApp-Info.plist"; sourceTree = "<group>"; };
+		5D12FFF415054F4700D0A72E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D12FFF615054F4700D0A72E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D12FFF815054F4700D0A72E /* BloodbankiPhoneApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodbankiPhoneApp-Prefix.pch"; sourceTree = "<group>"; };
+		5D12FFF915054F4700D0A72E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D12FFFA15054F4700D0A72E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D12FFE315054F4700D0A72E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D120027150556BB00D0A72E /* CFNetwork.framework in Frameworks */,
+				5D120025150556B000D0A72E /* SystemConfiguration.framework in Frameworks */,
+				5D120023150556A500D0A72E /* AudioToolbox.framework in Frameworks */,
+				5D120021150552C900D0A72E /* libstdc++.dylib in Frameworks */,
+				5D12001F150552BC00D0A72E /* libiconv.dylib in Frameworks */,
+				5D12001D150552AC00D0A72E /* Security.framework in Frameworks */,
+				5D12001B150552A600D0A72E /* OpenGLES.framework in Frameworks */,
+				5D1200191505529D00D0A72E /* AVFoundation.framework in Frameworks */,
+				5D1200171505529200D0A72E /* CoreMedia.framework in Frameworks */,
+				5D1200151505527C00D0A72E /* CoreVideo.framework in Frameworks */,
+				5D1200131505527000D0A72E /* QuartzCore.framework in Frameworks */,
+				5D12FFEB15054F4700D0A72E /* UIKit.framework in Frameworks */,
+				5D12FFED15054F4700D0A72E /* Foundation.framework in Frameworks */,
+				5D12FFEF15054F4700D0A72E /* CoreGraphics.framework in Frameworks */,
+				5D1200031505515D00D0A72E /* libRedLaserSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D12FFDB15054F4700D0A72E = {
+			isa = PBXGroup;
+			children = (
+				5D120045150563BB00D0A72E /* RedLaser_License.xml */,
+				5D1200321505611100D0A72E /* RLSampleViewController.h */,
+				5D1200331505611100D0A72E /* RLSampleViewController.m */,
+				5D1200341505611100D0A72E /* RLSampleViewController.xib */,
+				5D1200351505611100D0A72E /* poweredByRedLaser.png */,
+				5D1200361505611100D0A72E /* poweredByRedLaser@2x.png */,
+				5D1200371505611100D0A72E /* powered_by_redlaser.png */,
+				5D1200381505611100D0A72E /* powered_by_redlaser@2x.png */,
+				5D1200391505611100D0A72E /* Icon.png */,
+				5D12003A1505611200D0A72E /* beep.wav */,
+				5D12003B1505611200D0A72E /* bolt.png */,
+				5D120026150556BB00D0A72E /* CFNetwork.framework */,
+				5D120024150556B000D0A72E /* SystemConfiguration.framework */,
+				5D120022150556A500D0A72E /* AudioToolbox.framework */,
+				5D120020150552C900D0A72E /* libstdc++.dylib */,
+				5D12001E150552BC00D0A72E /* libiconv.dylib */,
+				5D12001C150552AC00D0A72E /* Security.framework */,
+				5D12001A150552A600D0A72E /* OpenGLES.framework */,
+				5D1200181505529D00D0A72E /* AVFoundation.framework */,
+				5D1200161505529200D0A72E /* CoreMedia.framework */,
+				5D1200141505527C00D0A72E /* CoreVideo.framework */,
+				5D1200121505527000D0A72E /* QuartzCore.framework */,
+				5D1200081505519C00D0A72E /* OverlayController.h */,
+				5D1200091505519C00D0A72E /* OverlayController.m */,
+				5D12000C1505519C00D0A72E /* ScanOverlay.xib */,
+				5D1200011505515D00D0A72E /* libRedLaserSDK.a */,
+				5D1200021505515D00D0A72E /* RedLaserSDK.h */,
+				5D12FFF015054F4700D0A72E /* BloodbankiPhoneApp */,
+				5D12FFE915054F4700D0A72E /* Frameworks */,
+				5D12FFE715054F4700D0A72E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D12FFE715054F4700D0A72E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D12FFE615054F4700D0A72E /* BloodbankiPhoneApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D12FFE915054F4700D0A72E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D12FFEA15054F4700D0A72E /* UIKit.framework */,
+				5D12FFEC15054F4700D0A72E /* Foundation.framework */,
+				5D12FFEE15054F4700D0A72E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D12FFF015054F4700D0A72E /* BloodbankiPhoneApp */ = {
+			isa = PBXGroup;
+			children = (
+				5D12FFF915054F4700D0A72E /* AppDelegate.h */,
+				5D12FFFA15054F4700D0A72E /* AppDelegate.m */,
+				5D12FFF115054F4700D0A72E /* Supporting Files */,
+			);
+			path = BloodbankiPhoneApp;
+			sourceTree = "<group>";
+		};
+		5D12FFF115054F4700D0A72E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D12FFF215054F4700D0A72E /* BloodbankiPhoneApp-Info.plist */,
+				5D12FFF315054F4700D0A72E /* InfoPlist.strings */,
+				5D12FFF615054F4700D0A72E /* main.m */,
+				5D12FFF815054F4700D0A72E /* BloodbankiPhoneApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D12FFE515054F4700D0A72E /* BloodbankiPhoneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D12FFFE15054F4700D0A72E /* Build configuration list for PBXNativeTarget "BloodbankiPhoneApp" */;
+			buildPhases = (
+				5D12FFE215054F4700D0A72E /* Sources */,
+				5D12FFE315054F4700D0A72E /* Frameworks */,
+				5D12FFE415054F4700D0A72E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloodbankiPhoneApp;
+			productName = BloodbankiPhoneApp;
+			productReference = 5D12FFE615054F4700D0A72E /* BloodbankiPhoneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D12FFDD15054F4700D0A72E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = dhillon;
+			};
+			buildConfigurationList = 5D12FFE015054F4700D0A72E /* Build configuration list for PBXProject "BloodbankiPhoneApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D12FFDB15054F4700D0A72E;
+			productRefGroup = 5D12FFE715054F4700D0A72E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D12FFE515054F4700D0A72E /* BloodbankiPhoneApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D12FFE415054F4700D0A72E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D12FFF515054F4700D0A72E /* InfoPlist.strings in Resources */,
+				5D1200101505519C00D0A72E /* ScanOverlay.xib in Resources */,
+				5D12003D1505611200D0A72E /* RLSampleViewController.xib in Resources */,
+				5D12003E1505611200D0A72E /* poweredByRedLaser.png in Resources */,
+				5D12003F1505611200D0A72E /* poweredByRedLaser@2x.png in Resources */,
+				5D1200401505611200D0A72E /* powered_by_redlaser.png in Resources */,
+				5D1200411505611200D0A72E /* powered_by_redlaser@2x.png in Resources */,
+				5D1200421505611200D0A72E /* Icon.png in Resources */,
+				5D1200431505611200D0A72E /* beep.wav in Resources */,
+				5D1200441505611200D0A72E /* bolt.png in Resources */,
+				5D120046150563BB00D0A72E /* RedLaser_License.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D12FFE215054F4700D0A72E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D12FFF715054F4700D0A72E /* main.m in Sources */,
+				5D12FFFB15054F4700D0A72E /* AppDelegate.m in Sources */,
+				5D12000E1505519C00D0A72E /* OverlayController.m in Sources */,
+				5D12003C1505611200D0A72E /* RLSampleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D12FFF315054F4700D0A72E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D12FFF415054F4700D0A72E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D12000015054F4700D0A72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodbankiPhoneApp/BloodbankiPhoneApp-Prefix.pch";
+				INFOPLIST_FILE = "BloodbankiPhoneApp/BloodbankiPhoneApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D12FFFC15054F4700D0A72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D12FFFD15054F4700D0A72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D12FFFF15054F4700D0A72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodbankiPhoneApp/BloodbankiPhoneApp-Prefix.pch";
+				INFOPLIST_FILE = "BloodbankiPhoneApp/BloodbankiPhoneApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D12FFE015054F4700D0A72E /* Build configuration list for PBXProject "BloodbankiPhoneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D12FFFC15054F4700D0A72E /* Debug */,
+				5D12FFFD15054F4700D0A72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D12FFFE15054F4700D0A72E /* Build configuration list for PBXNativeTarget "BloodbankiPhoneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D12FFFF15054F4700D0A72E /* Debug */,
+				5D12000015054F4700D0A72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D12FFDD15054F4700D0A72E /* Project object */;
+}
